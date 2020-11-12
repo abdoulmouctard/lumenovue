@@ -115,9 +115,7 @@ $app->router->group([
     require __DIR__ . '/../routes/api.php';
 });
 
-$app->router->group([
-    'namespace' => 'App\Http\Controllers',
-], function (Router $router) {
+$app->router->group([], function (Router $router) {
     require __DIR__ . '/../routes/web.php';
 });
 
