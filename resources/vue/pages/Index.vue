@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-warmgray-300 min-h-5xl max-w-2xl my-10 mx-auto p-3 rounded-xl">
+    <div class="bg-warmgray-300 min-h-5xl max-w-2xl mx-auto p-3 rounded-xl">
         <h1 class="text-center text-warmgray-700 text-5xl">Index page</h1>
         <h3 class="text-gray-900">Hello world</h3>
         <p class="text-gray-700">
@@ -16,5 +16,3 @@ export default {
     name: "Index"
 };
 </script>
-
-<style></style>

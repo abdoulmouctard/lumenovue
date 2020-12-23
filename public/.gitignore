@@ -1,2 +1,3 @@
 dist
 mix-manifest.json
+**/*.js
