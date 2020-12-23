@@ -5,7 +5,7 @@ module.exports = {
         "./storage/framework/views/*.php",
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
-        "./resources/**/*.vue",
+        "./resources/**/*.vue"
     ],
     presets: [],
     darkMode: false, // or 'media' or 'class'
@@ -30,7 +30,12 @@ module.exports = {
             blue: colors.blue,
             indigo: colors.indigo,
             purple: colors.violet,
-            pink: colors.pink
+            pink: colors.pink,
+
+            warmgray: colors.warmGray,
+            teal: colors.teal,
+            fuchsia: colors.fuchsia,
+            lightblue: colors.lightBlue,
         },
         spacing: {
             px: "1px",
