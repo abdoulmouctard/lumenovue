@@ -11,6 +11,6 @@
 <div id="app">
     <router-view></router-view>
 </div>
-<script src="dist/app.js"></script>
+<script src="dist/main.js"></script>
 </body>
 </html>
