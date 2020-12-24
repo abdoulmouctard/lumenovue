@@ -1,5 +1,11 @@
 import Index from "../pages/Index.vue";
 
+const routes = [
+    page("/", "index", Index),
+    page("/home", "home", Index),
+    page("/welcome", "welcome", Index)
+];
+
 function page(path, name, component, meta = { layout: "default" }) {
     return {
         path,
@@ -9,11 +15,5 @@ function page(path, name, component, meta = { layout: "default" }) {
         props: true
     };
 }
-
-const routes = [
-    page("/", "index", Index),
-    page("/home", "home", Index),
-    page("/welcome", "welcome", Index)
-];
 
 export default routes;
