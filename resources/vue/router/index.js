@@ -1,5 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import store from "../store";
+import middleware from "@grafikri/vue-middleware";
 
 import routes from "./routes";
 
@@ -10,5 +12,7 @@ const router = new VueRouter({
     base: "/",
     routes
 });
+
+router.beforeEach(middleware({ store }));
 
 export default router;

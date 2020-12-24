@@ -18,6 +18,7 @@
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
+    "@grafikri/vue-middleware": "^1.0.0",
     "tailwindcss": "^2.0.1-compat",
     "vue": "^2.6.12",
     "vue-router": "^3.4.9",

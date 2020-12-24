@@ -1,3 +1,4 @@
+import trackMiddleware from "../middleware/track.middleware";
 import Index from "../pages/Index.vue";
 
 const routes = [
@@ -6,12 +7,17 @@ const routes = [
     page("/welcome", "welcome", Index)
 ];
 
-function page(path, name, component, meta = { layout: "default" }) {
+function page(
+    path,
+    name,
+    component,
+    meta = { layout: "default", middleware: [] }
+) {
     return {
         path,
         name,
         component,
-        meta,
+        meta: { ...meta, middleware: [...meta.middleware, trackMiddleware] },
         props: true
     };
 }
