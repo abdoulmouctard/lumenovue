@@ -20,6 +20,12 @@
             >
                 increment
             </button>
+            <button
+                class="bg-pink-400 ring-0 p-2 px-3 m-2 rounded-lg outline-none shadow-xl"
+                @click="$store.dispatch('clear')"
+            >
+                clear
+            </button>
         </div>
     </div>
 </template>
